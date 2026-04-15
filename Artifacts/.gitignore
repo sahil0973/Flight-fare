@@ -1,5 +1,7 @@
-Model.pkl
-Preprocessor.pkl
+
 Raw_data.csv
 Test_data.csv
 Train_data.csv
+*.pkl
+!Artifacts/Model.pkl
+!Artifacts/Preprocessor.pkl
