@@ -12,8 +12,8 @@ class PredictPipeline:
     
     def predict(self,features):
         try:
-            preprocessor_path=os.path.join("Artifacts","Preprocessor.pkl")
-            model_path=os.path.join("Artifacts","Model.pkl")
+            preprocessor_path=os.path.join(base_path,"Notebook_Experiment","artifacts","preprocessor.pkl")
+            model_path=os.path.join(base_path,"Notebook_Experiment","artifacts","model.pkl")
             preprocessor=load_object(preprocessor_path)
             model=load_object(model_path)
             scaled_data=preprocessor.transform(features)
